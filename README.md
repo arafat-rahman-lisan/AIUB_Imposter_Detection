@@ -72,9 +72,17 @@
 
 ## Run
 
+### Windows — easiest
+
+Extract the project, then **double-click `START_GAME.bat`**.
+
+- If the game is already built, it starts immediately.
+- If a compiler is installed with Code::Blocks/MinGW/MSYS2 but is not in `PATH`, the script detects it automatically.
+- If no compiler/FreeGLUT toolchain is available, the script can install MSYS2 through Windows Package Manager (`winget`), install GCC + FreeGLUT, build the game, and then start it.
+
 **Code::Blocks:** open `AIUB_Imposter_Detection.cbp`, then **Build and Run**.
 
-**Windows terminal:**
+**Manual Windows build:**
 
 ```bat
 build_windows.bat
